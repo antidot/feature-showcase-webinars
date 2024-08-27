@@ -1,0 +1,25 @@
+
+#results {
+    columns: 3;
+}
+a {
+text-decoration: none;
+}
+.title {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: #282832;
+    --ft-typography-title-font-weight: 600;
+}
+
+.delimiter {
+    width: 70px;
+    height: 2px;
+    margin: .5rem 0;
+    background-color: #00d5d9;
+}
+
+.excerpt {
+    font-size: 0.875rem;
+    color: #545469;
+}

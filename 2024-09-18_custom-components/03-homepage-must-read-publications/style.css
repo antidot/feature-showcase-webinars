@@ -1,0 +1,24 @@
+.glide__track{
+   width: 100%;
+}
+.glide__slide{
+  text-align: center;
+}
+.glide__arrow{
+  color: #000;
+  background-color: #fff
+}
+.result{
+ border:1px solid #000;
+}
+a {
+  text-decoration: none;
+}
+.title {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: #282832;
+  --ft-typography-title-font-weight: 600;
+}
+
+

@@ -1,0 +1,6 @@
+table tbody tr:nth-child(odd) {
+    background-color: #f3f3f8; 
+}
+table tbody td.sorting_1 {
+    font-weight: bold;
+}
