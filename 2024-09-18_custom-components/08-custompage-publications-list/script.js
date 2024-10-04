@@ -37,8 +37,11 @@ document.appendChild(dataTablesScript);
     let results_dataset = response.results.map((result) => {
       let entry = result.entries[0];
       let entry_type = entry.type.toLowerCase();
-      let r = entry[entry_type];      
-      let result_dataset = [entry_type, r.title];
+      let r = entry[entry_type];     
+      let result_dataset = [
+        entry_type, 
+        `<a href="${r.viewerUrl??r.readerUrl}" target="_blank">${r.title}</a>`
+      ];
       METADATA_KEYS.forEach(key => {
         result_dataset.push(getMetadata(r.metadata, key));
       });      
@@ -61,12 +64,8 @@ document.appendChild(dataTablesScript);
         top: {
             buttons: [ 'copy', 'excel']
         }
-    }
+      }
     });
     
 }
-
-
-
-
 
